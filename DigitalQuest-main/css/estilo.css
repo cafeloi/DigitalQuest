@@ -76,7 +76,6 @@ header .search_bar {
   width: 200px;
 }
 .menus_topo{
-  padding-left: 40px;
   list-style: none;
   display: flex;
   background: linear-gradient(
