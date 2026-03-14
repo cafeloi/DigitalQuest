@@ -1,3 +1,10 @@
+.container{
+  max-width: 3000px;
+  margin: 0 auto;
+
+}
+
+
 body {
   margin: 0;
   min-height: 100vh;
@@ -16,30 +23,37 @@ body {
 }
 
 header{
-display:flex;
-align-items:center;
-justify-content:space-between;
+ display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
 padding:20px 80px;
 border-bottom:1px solid #2a2a4a;
 }
 
 header h1
 { 
- 
+  margin:0;
   font-family: "Faster One", system-ui;
-   font-weight: 500;
+  font-weight: 500;
   font-style: italic;
   font-size: 80px;
   letter-spacing: -2px;
   background: linear-gradient(90deg, #00e5ff, #6c5ce7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+   margin-bottom:10px;
 
   text-shadow: 0 0 4px rgba(108, 92, 231, 0.6);
 }
 
+.logo-area{
+    display:flex;
+  align-items:center;
+  gap:20px;
+}
+
 header .search_bar {
-  margin-left: 350px;
   display: flex;
     form {
     height: -20px;
@@ -71,6 +85,8 @@ header .search_bar {
   
 }
 
+
+
 .logo  
 {
   width: 200px;
@@ -78,26 +94,28 @@ header .search_bar {
 .menus_topo{
   list-style: none;
   display: flex;
-  background: linear-gradient(
-    90deg,
-    #020617 0%,
-    #1e1b4b 20%,
-    #312e81 50%,
-    #1e1b4b 70%,
-    #020617 100%
-  );
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+
+  background: rgba(10, 10, 30, 0.6);
+  backdrop-filter: blur(6px);
+
+  border-top: 1px solid #2a2a4a;
+  border-bottom: 1px solid #2a2a4a;
+
   padding: 15px;
   margin: 0;
 }
-.menus_topo a
-{
-  padding-left: 100px;
+
+.menus_topo a{
   font-size: larger;
-  color:white;
+  color: white;
   font-weight: bold;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 .menus_topo a:hover
 {
-  color: blueviolet;
+  color: #6c5ce7;
 }
