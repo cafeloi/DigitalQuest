@@ -1,0 +1,49 @@
+.jogos_destaque{
+  max-width:1200px;
+  margin:80px auto;
+  color:white;
+}
+
+.grid_jogos{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:30px;
+}
+
+.card_jogo{
+  background: rgba(255,255,255,0.05);
+  padding:20px;
+  border-radius:10px;
+  text-align:center;
+}
+
+.card_jogo img{
+  width:100%;
+  border-radius:8px;
+}
+
+.card_jogo button{
+  background:#6c5ce7;
+  border:none;
+  color:white;
+  padding:10px 20px;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+section a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+   list-style: none;  
+}
+
+@media (max-width: 768px){
+
+.grid_jogos{
+  grid-template-columns: 1fr;
+}
+
+}
+
+}
